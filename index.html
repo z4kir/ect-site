@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Cost Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Employee Cost Tracker</h1>
+    <p class="lead">A Windows desktop app for companies to record and review the daily expenses of their employees.</p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Employees enter their daily expenses (travel, food, fuel and more) until the day's cut-off time.</li>
+      <li>Admins review, correct and export the expenses of their organisation.</li>
+      <li>Every day the app can save a spreadsheet of that day's expenses to the company's own Google Drive.</li>
+    </ul>
+
+    <h2>Where the data lives</h2>
+    <p>The app runs on a computer of the company that uses it. All data is stored there, encrypted.
+      The developer does not run a server and does not receive any of the data.</p>
+
+    <h2>Google Drive</h2>
+    <p>When an admin connects Google Drive, the app asks only for the <code>drive.file</code> permission:
+      it can see and change only the files it creates itself (a folder named "Employee Cost Tracker" with one
+      spreadsheet per day). It cannot read any other file in the Drive.</p>
+
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </main>
+  <footer>Questions: <a href="https://github.com/z4kir/ect-site/issues">open an issue</a>.</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · Employee Cost Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p><a href="./">← Employee Cost Tracker</a></p>
+    <h1>Privacy policy</h1>
+    <p class="muted">Last updated: 24 October 2026</p>
+
+    <h2>Who is responsible for the data</h2>
+    <p>Employee Cost Tracker is installed and run by a company on its own computer. That company decides
+      who uses the app and is responsible for the data entered in it. The developer of the app does not run
+      a server, does not collect usage data and has no access to the data.</p>
+
+    <h2>Data the app stores</h2>
+    <ul>
+      <li>Account details of the people who use it: name, email address, optional phone number, role and a
+        securely hashed password.</li>
+      <li>Expense entries: date, time, category, amount and optional place and notes.</li>
+      <li>An audit log of changes, including the computer's network address.</li>
+    </ul>
+    <p>Everything is stored on the company's computer in an encrypted database. Nothing is sent to the developer
+      or to any third party, except the Google Drive export described below, and password-reset emails that
+      the company's own mail server sends when someone asks for a reset code.</p>
+
+    <h2>Google user data</h2>
+    <ul>
+      <li><strong>What is accessed:</strong> when an admin connects Google Drive, the app asks for the
+        <code>https://www.googleapis.com/auth/drive.file</code> permission only. It can create, see and update
+        only the files it created itself: a folder named "Employee Cost Tracker" and one spreadsheet of expenses
+        per day. It cannot see any other file in the Drive. It also reads the email address of the connected
+        Google account to show which account is connected.</li>
+      <li><strong>How it is used:</strong> only to write the daily expense spreadsheets of the company into
+        that company's own Drive.</li>
+      <li><strong>Storage:</strong> the tokens from Google are stored encrypted on the company's
+        computer. They are never sent anywhere else.</li>
+      <li><strong>Sharing:</strong> Google user data is not shared with, sold or transferred to anyone, and
+        is not used for advertising or to train any AI model.</li>
+      <li>The use of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+        Policy</a>, including the Limited Use requirements.</li>
+    </ul>
+
+    <h2>Removing access and data</h2>
+    <p>An admin can disconnect Google Drive in the app at any time, or remove the app's access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. The spreadsheets
+      already in the Drive stay there until the owner deletes them. Data on the company's computer is deleted
+      by the company, for example by deleting a client in the app or uninstalling the app and choosing to
+      delete its data.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about your data, contact the company that gave you access to the app. Questions about the
+      app itself: <a href="https://github.com/z4kir/ect-site/issues">open an issue</a>.</p>
+  </main>
+</body>
+</html>

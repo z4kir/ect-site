@@ -7,4 +7,7 @@ h2 { margin-top: 32px; font-size: 20px; }
 .lead { font-size: 18px; opacity: .85; }
 .muted { opacity: .7; font-size: 14px; }
 a { color: var(--accent); }
+.button { display: inline-block; padding: 10px 18px; border-radius: 8px; background: var(--accent); color: #fff;
+  font-weight: 600; text-decoration: none; }
+.button:hover { filter: brightness(1.1); }
 code { background: color-mix(in srgb, CanvasText 8%, transparent); padding: 1px 5px; border-radius: 4px; word-break: break-all; }
